@@ -1,0 +1,224 @@
+/* big table to 1200px */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 0.9em;
+  }
+}
+/* small table to big tablet */
+@media screen and (max-width: 1023px) {
+  /* HEADER */
+  .logo {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .header-ul {
+    margin-right: 10px;
+  }
+  .header-row {
+    transform: translate(-30%, -60%);
+  }
+
+  /* PRODUCTS-SECTION */
+  .products-box {
+    width: 95%;
+  }
+  .products-box h3 {
+    font-size: 1em;
+  }
+  .products-box-flexitem ul li {
+    transform: translateX(-40%);
+  }
+  .products-box .btn {
+    min-width: 0;
+    width: 80%;
+  }
+  .social-media-address span {
+    display: block;
+  }
+  .media-address i {
+    font-size: 2em;
+  }
+
+  /* CONTACT-SECTION */
+  .contact-form form {
+    font-size: 1.25em;
+  }
+  .contact-form-text label {
+    display: none;
+  }
+  .contact-form-text {
+    flex-wrap: wrap;
+  }
+}
+
+/* small phones to small tablets */
+@media screen and (max-width: 767px) {
+  /*HEADER  */
+  .header-logo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 95px auto;
+    grid-template-areas:
+      "h1 h2"
+      "h3 h3";
+  }
+  .header-logo a {
+    grid-area: h1;
+  }
+  .header-logo .header-ul {
+    grid-area: h3;
+    margin-left: calc(30% - 80px);
+  }
+  .header-logo .mobile-nav-icon {
+    grid-area: h2;
+  }
+  .header-ul {
+    z-index: 900;
+    display: none;
+  }
+  .header-ul li {
+    display: inline-block;
+  }
+  .header-ul li a {
+    font-size: 0.9em;
+    color: white;
+  }
+  .logo {
+    width: 350px;
+  }
+  .sticky .header-logo .logo {
+    width: 350px;
+  }
+  .header-row {
+    transform: translate(-15%, -60%);
+  }
+  .col {
+    width: 100%;
+  }
+  .header-row h1 {
+    font-size: 2.4em;
+    word-spacing: 2px;
+  }
+  .header-btn {
+    min-width: 160px;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  /* ABOUT-SECTION US */
+  .about-section .p-long {
+    margin-bottom: 0;
+    font-size: 1.3888888888888888em;
+  }
+  .picture-title {
+    font-size: 1.7361111111111112em;
+  }
+
+  /* PRODUCTS-SECTION */
+  .products-box {
+    width: 70%;
+    margin-left: 12.5%;
+  }
+  .products-section h2 {
+    margin-bottom: 30px;
+  }
+  .products-section .row .col {
+    margin-bottom: 30px;
+  }
+  .products-box-flexitem ul li {
+    display: block;
+    transform: translateX(-40%);
+    font-size: 1.25em;
+    width: 65%;
+    word-break: break-word;
+  }
+  .products-box-flexitem .btn {
+    width: 80%;
+  }
+
+  /* TESTIMONIALS SECTION */
+  blockquote {
+    margin-bottom: 30px;
+  }
+
+  /* SPONSOR-SECTION */
+  .sponsors-grid {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 0;
+  }
+  .grid-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* CONTACT-SECTION */
+  .contact-section {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-gap: 30px 0;
+  }
+  .social-media {
+  }
+  .social-media-address {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45%);
+  }
+  .media-address {
+    text-align: center;
+    margin-left: -20px;
+  }
+  .media-address i {
+    margin-top: 20px;
+  }
+  .contact-form form {
+    width: 60%;
+    margin-left: calc(20% + 5px);
+  }
+  .contact-form-text input {
+    padding: 10px;
+    font-size: 0.7em;
+    width: 100%;
+  }
+  .contact-form form input[type="submit"] {
+    min-width: 80%;
+    padding: 10px;
+  }
+}
+
+/* small phones from 0 to 400px */
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 0.7em;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  /* HEADER */
+  .header-logo {
+    grid-template-rows: 60px;
+  }
+  .header-logo .header-ul li a {
+    font-size: 1em;
+  }
+  .sticky .header-logo .logo {
+    width: 250px;
+  }
+  .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .logo {
+    width: 250px;
+    margin-top: -50px;
+    margin-left: 40px;
+  }
+  .header-row {
+    transform: translate(-10%, -80%);
+  }
+  .header-row a {
+    min-width: 110px;
+  }
+}
