@@ -5,265 +5,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selftaught</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./resources/favicons/site.webmanifest">
-    <link rel="mask-icon" href="./resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="./resources/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="./resources/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./vendors/css/grid.css">
-    <link rel="stylesheet" href="./resources/css/styles.css">
-    <link rel="stylesheet" href="./resources/css/queries.css">
-    <style>
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./resources/js.js">
+    <link rel="stylesheet" href="./resources/style.css" type="text/css">
+    <link rel="stylesheet" href="./resources/query.css">
 </head>
 
 <body>
-    <div class="header" id="home">
+    <section class="header">
         <nav>
-            <div class="header-logo">
-                <a href="#home">
-                    <img src="./resources/img/logo.png" alt="logo" class="logo">
-                </a>
-                <ul class="header-ul">
-                    <li><a href="#testimonials">How clients think</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a href="index.html"><img src="./resources/img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" style="width: 20px; background-color: #f44336;" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
                 </ul>
-                <i class="fas fa-bars mobile-nav-icon"></i>
             </div>
+            <i class="fas fa-bars"
+                style="background-color: #f44336; padding: 5px; border-radius: 2px; overflow: hidden;"
+                onclick="showMenu()"></i>
         </nav>
-        <div class="header-row">
-            <h1>we will study <br> english together. <br> so join with us.</h1>
-            <a class="btn header-btn" href="#about">Tell me more</a>
-            <a class="btn header-btn" href="#products">Join Us</a>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>
+                Javascript and you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us to know more</a>
         </div>
+    </section>
+    <!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    <!-------------------------COURSE------------------------>
+    <section class="course">
+        <div class="course-box">
+            <h1>Courses We Offer</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+        </div>
+        <div class="row course-row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio laboriosam animi assumenda
+                excepturi laborum, ratione rerum tempore pariatur magnam aliquam inventore facilis adipisci quos,
+                nostrum labore recusandae, fuga quis?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio laboriosam animi assumenda
+                excepturi laborum, ratione rerum tempore pariatur magnam aliquam inventore facilis adipisci quos,
+                nostrum labore recusandae, fuga quis?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio laboriosam animi assumenda
+                excepturi laborum, ratione rerum tempore pariatur magnam aliquam inventore facilis adipisci quos,
+                nostrum labore recusandae, fuga quis?</p>
+            </div>
+        </div>
+    </section>
+    <!-- CAMPUS -->
+    <section class="campus">
+        <div class="campus-box">
+            <h1>Our Global Campus</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="row campus-row">
+           <div class="campus-col">
+               <img src="./resources/img/london.png" alt="London">
+               <div class="layer">
+                   <h3>London</h3>
+               </div>
+           </div> 
+           <div class="campus-col">
+               <img src="./resources/img/washington.png" alt="Washington">
+               <div class="layer">
+                   <h3>Washington</h3>
+               </div>
+           </div> 
+           <div class="campus-col">
+               <img src="./resources/img/newyork.png" alt="NewYork">
+               <div class="layer">
+                   <h3>NewYork</h3>
+               </div>
+           </div> 
+        </div>
+    </section>
+    <!--------------------- FACILITIES -------------------->
+    <section class="facilities">
+        <div class="facilities-box">
+            <h1>Our Facilities</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="row facilities-row">
+            <div class="facilities-col">
+                <img src="./resources/img/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam saepe expedita accusantium sint porro.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="./resources/img/basketball.png" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam saepe expedita accusantium sint porro.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="./resources/img/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam saepe expedita accusantium sint porro.</p>
+            </div>
+        </div>
+    </section>
+<!-------------------TESTIMONIALS--------------- -->
+<section class="testimonials">
+    <div class="testimonials-box">
+        <h1>What Our Student says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <section class="about-section" id="about">
-        <h2>About Us</h2>
-        <p class="p-long">
-            We are people that studying by ourselves, we believe that you don't need to pay so much money for being
-            good ad English, we're here to help you.
-        </p>
-        <div class="row">
-            <div class="col span-1-of-4 about-picture">
-                <img src="resources/img/activities1.jpeg" alt="activities1">
-                <div class="div-picture-title">
-                    <p class="picture-title">
-                        Team working
-                    </p>
-                </div>
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="resources/img/activities2.jpeg" alt="activities2">
-                <div class="div-picture-title">
-                    <p class="picture-title">
-                        Funny class
-                    </p>
-                </div>
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="resources/img/activities3.jpeg" alt="activities3">
-                <div class="div-picture-title">
-                    <p class="picture-title">
-                        Be confident
-                    </p>
-                </div>
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="resources/img/activities4.jpeg" alt="activities4">
-                <div class="div-picture-title">
-                    <p class="picture-title">
-                        All our friends
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="products-section" id="products">
-        <h2>Products</h2>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <div class="products-box">
-                    <h3>Pronunciation class</h3>
-                    <div class="products-box-flexbox">
-                        <p class="product-price">19$ <span>/ month</span></p>
-                        <div class="products-box-flexitem">
-                            <ul>
-                                <li><i class="fas fa-check small-icon"></i>Native voices</li>
-                                <li><i class="fas fa-check small-icon"></i>Master IPA</li>
-                            </ul>
-                            <a href="#" class="btn">JOIN US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="products-box">
-                    <h3>Speaking class</h3>
-                    <div class="products-box-flexbox">
-                        <p class="product-price">23$ <span>/ month</span></p>
-                        <div class="products-box-flexitem">
-                            <ul>
-                                <li><i class="fas fa-check small-icon"></i>Native voices</li>
-                                <li><i class="fas fa-check small-icon"></i>Master IPA</li>
-                            </ul>
-                            <a href="#" class="btn">JOIN US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="products-box">
-                    <h3>Listening class</h3>
-                    <div class="products-box-flexbox">
-                        <p class="product-price">25$ <span>/ month</span></p>
-                        <div class="products-box-flexitem">
-                            <ul>
-                                <li><i class="fas fa-check small-icon"></i>Native speech</li>
-                                <li><i class="fas fa-check small-icon"></i>Hearing English clearly</li>
-                            </ul>
-                            <a href="#" class="btn">JOIN US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials-section" id="testimonials">
-        <h2>testimonials</h2>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <blockquote>
-                    The course in very helpful, I can speak English fluency and I think The SF English became my second
-                    family, I live everyone very much. Thank you (Hoang Minh Loi)
-                    <cite>
-                        <img src="resources/img/person5.jpeg" alt="person 1">Hoang Minh Loi
-                    </cite>
-                </blockquote>
-            </div>
-            <div class="col span-1-of-3">
-                <blockquote>
-                    I believe that who cam to This English centre would love this place as I did, when the course
-                    finished, I feel sad because studying in that place I always felt funny (Nguyen Manh Tai)
-                    <cite>
-                        <img src="resources/img/person2.jpeg" alt="person 2">Nguyen Manh Tai
-                    </cite>
-                </blockquote>
-            </div>
-            <div class="col span-1-of-3">
-                <blockquote>
-                    Trust me, you can master English just by joining this class, I did, so I believe that you can too.
-                    Hope that one day, you can come and join this class (Nguyen Manh Quyen)
-                    <cite>
-                        <img src="resources/img/person4.jpeg" alt="person 3">Nguyen Manh Quyen
-                    </cite>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-    <section class="sponsors-section" id="sponsors">
-        <h2>Sponsors</h2>
-        <div class="sponsors-grid">
-            <div class="sponsors-item">
-                <img src="resources/img/barcelona_logo.png" alt="barcelona_logo" class="grid-image">
-                <div class="grid-content">
-                    Barcelona
-                </div>
-            </div>
-            <div class="sponsors-item">
-                <img src="resources/img/mctcity_logo.png" alt="mctcity_logo" class="grid-image">
-                <div class="grid-content">
-                    Manchester City
-                </div>
-            </div>
-            <div class="sponsors-item">
-                <img src="resources/img/tottenham_logo.png" alt="tottenham_logo" class="grid-image">
-                <div class="grid-content">
-                    Tottenham Hotspur
-                </div>
-            </div>
-            <div class="sponsors-item">
-                <img src="resources/img/real_logo.png" alt="real_logo" class="grid-image">
-                <div class="grid-content">
-                    Real Marid
-                </div>
-            </div>
-            <div class="sponsors-item">
-                <img src="resources/img/juventus_logo.png" alt="juventus_logo" class="grid-image">
-                <div class="grid-content">
-                    Juventus
-                </div>
-            </div>
-            <div class="sponsors-item">
-                <img src="resources/img/mctunited_logo.png" alt="mctunited_logo" class="grid-image">
-                <div class="grid-content">
-                    Manchester United
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact-section" id="contact">
-        <div class="social-media">
-            <div class="social-media-address">
-                <i class="fas fa-map-marker-alt small-icon"></i>
-                <span class="social-adress">
-                    Address: 21A, SelfTaught street, HaNoi
-                </span>
-            </div>
-            <div class="social-media-address">
-                <i class="fas fa-envelope small-icon"></i>
-                <span class="social-address">
-                    Email: Selftaughtteam@edu.com
-                </span>
-            </div>
-            <div class="social-media-address">
-                <i class="fas fa-phone small-icon"></i>
-                <span class="social-address">
-                    SDT: (+084) 099-923-232-320
-                </span>
-            </div>
-            <div class="media-address">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-google-plus-square"></i>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="#">
-                <div class="contact-form-text">
-                    <label for="username">Name</label>
-                    <input type="text" name="username" id="username" placeholder="Your Name">
-                </div>
-                <div class="contact-form-text">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Your Email">
-                </div>
-                <div class="contact-form-text">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="20" rows="2" placeholder="Your Message"></textarea>
-                </div>
-                <input type="submit" class="btn" value="Submit">
-            </form>
-        </div>
-    </section>
-    <footer>
-        <p>Copyright &copy; 2018 by SELFTAUGH TEAM</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="./vendors/js/jquery.waypoints.min.js"></script>
-    <script src="./resources/js/scripts.js"></script>
+    <div class="row testimonials-row">
+         <div class="testimonials-col">
+             <img src="./resources/img/user1.jpg" alt="">
+             <div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit assumenda cumque illum quis, saepe dolore? Ab quae blanditiis minus?</p>
+                 <h3>Christine Berkley</h3>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+             </div>
+         </div>
+         <div class="testimonials-col">
+             <img src="./resources/img/user2.jpg" alt="">
+             <div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit assumenda cumque illum quis, saepe dolore? Ab quae blanditiis minus?</p>
+                 <h3>David Byer</h3>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+             </div>
+         </div>
+         
+    </div>
+</section>
+<!-------------------CALL TO ACTION------------------->
+<section class="cta">
+    <div class="cta-box">
+        <h1>Enroll For Out Various Online Courses <br> Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </div>
+</section>
+<section class="footer">
+    <h4>About Us </h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum a nihil <br> rem velit aperiam facere asperiores voluptate odio ad! Alias unde obcaecati porro repellat.</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+        <p>Made with <i class="fas fa-heart" style="color: red;"></i> by Easy Tutorials</p>
+</section>
+
 </body>
 
 </html>

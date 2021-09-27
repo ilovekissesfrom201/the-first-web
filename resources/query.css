@@ -1,0 +1,41 @@
+@media screen and (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+    text-align: left;
+    transition: 1s;
+  }
+  nav .fas {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  nav > .fas:hover {
+    background-color: rgba(244, 67, 54, 0.8) !important;
+  }
+  .row {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .cta-box h1 {
+    font-size: 24px;
+  }
+}
