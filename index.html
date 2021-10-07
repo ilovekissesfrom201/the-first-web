@@ -6,184 +6,306 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./resources/js.js">
-    <link rel="stylesheet" href="./resources/style.css" type="text/css">
+    <link rel="stylesheet" href="./resources/style.css">
     <link rel="stylesheet" href="./resources/query.css">
 </head>
 
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="./resources/img/logo.png" alt=""></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" style="width: 20px; background-color: #f44336;" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars"
-                style="background-color: #f44336; padding: 5px; border-radius: 2px; overflow: hidden;"
-                onclick="showMenu()"></i>
-        </nav>
-        <div class="text-box">
-            <h1>World's Biggest University</h1>
-            <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>
-                Javascript and you are good to go.</p>
-            <a href="" class="hero-btn">Visit Us to know more</a>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="title">Brand name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </section>
-    <!-- Javascript for Toggle Menu -->
-    <script>
-        var navLinks = document.getElementById("navLinks")
-        function showMenu() {
-            navLinks.style.right = "0"
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px"
-        }
-    </script>
-    <!-------------------------COURSE------------------------>
-    <section class="course">
-        <div class="course-box">
-            <h1>Courses We Offer</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
-        </div>
-        <div class="row course-row">
-            <div class="course-col">
-                <h3>Intermediate</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio laboriosam animi assumenda
-                excepturi laborum, ratione rerum tempore pariatur magnam aliquam inventore facilis adipisci quos,
-                nostrum labore recusandae, fuga quis?</p>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- search -->
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="search here">
+                        <ion-icon name="search"></ion-icon>
+                    </label>
+                </div>
+                <!-- userImg -->
+                <div class="user">
+                    <img src="./resources/img/user.jpg" alt="">
+                </div>
             </div>
-            <div class="course-col">
-                <h3>Degree</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio laboriosam animi assumenda
-                excepturi laborum, ratione rerum tempore pariatur magnam aliquam inventore facilis adipisci quos,
-                nostrum labore recusandae, fuga quis?</p>
+            <!-- cards -->
+            <div class="cardBox">
+                <div class="card">
+                   <div>
+                    <div class="numbers">1,504</div>
+                    <div class="cardName">Daily Views</div>
+                   </div>
+                   <div class="iconBx">
+                    <ion-icon name="eye-outline"></ion-icon>
+                   </div>
+                </div>
+                <div class="card">
+                   <div>
+                    <div class="numbers">80</div>
+                    <div class="cardName">Sales</div>
+                   </div>
+                   <div class="iconBx">
+                    <ion-icon name="cart-outline"></ion-icon>
+                   </div>
+                </div>
+                <div class="card">
+                   <div>
+                    <div class="numbers">284</div>
+                    <div class="cardName">Comments</div>
+                   </div>
+                   <div class="iconBx">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                   </div>
+                </div>
+                <div class="card">
+                   <div>
+                    <div class="numbers">$66</div>
+                    <div class="cardName">Earning</div>
+                   </div>
+                   <div class="iconBx">
+                    <ion-icon name="cash-outline"></ion-icon>
+                   </div>
+                </div>
             </div>
-            <div class="course-col">
-                <h3>Post Graduation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio laboriosam animi assumenda
-                excepturi laborum, ratione rerum tempore pariatur magnam aliquam inventore facilis adipisci quos,
-                nostrum labore recusandae, fuga quis?</p>
+            <!-- order details list -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent recentOrders</h2>
+                        <a href="" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status pending">Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status pending">Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status delivered">delivered</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- New customers -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img1.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img2.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img3.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img7.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img8.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img9.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img5.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./resources/img/img6.jpg" alt=""></div></td>
+                            <td><h4>David</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- CAMPUS -->
-    <section class="campus">
-        <div class="campus-box">
-            <h1>Our Global Campus</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="row campus-row">
-           <div class="campus-col">
-               <img src="./resources/img/london.png" alt="London">
-               <div class="layer">
-                   <h3>London</h3>
-               </div>
-           </div> 
-           <div class="campus-col">
-               <img src="./resources/img/washington.png" alt="Washington">
-               <div class="layer">
-                   <h3>Washington</h3>
-               </div>
-           </div> 
-           <div class="campus-col">
-               <img src="./resources/img/newyork.png" alt="NewYork">
-               <div class="layer">
-                   <h3>NewYork</h3>
-               </div>
-           </div> 
-        </div>
-    </section>
-    <!--------------------- FACILITIES -------------------->
-    <section class="facilities">
-        <div class="facilities-box">
-            <h1>Our Facilities</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="row facilities-row">
-            <div class="facilities-col">
-                <img src="./resources/img/library.png" alt="">
-                <h3>World Class Library</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam saepe expedita accusantium sint porro.</p>
-            </div>
-            <div class="facilities-col">
-                <img src="./resources/img/basketball.png" alt="">
-                <h3>Largest Play Ground</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam saepe expedita accusantium sint porro.</p>
-            </div>
-            <div class="facilities-col">
-                <img src="./resources/img/cafeteria.png" alt="">
-                <h3>Tasty and Healthy Food</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam saepe expedita accusantium sint porro.</p>
-            </div>
-        </div>
-    </section>
-<!-------------------TESTIMONIALS--------------- -->
-<section class="testimonials">
-    <div class="testimonials-box">
-        <h1>What Our Student says</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="row testimonials-row">
-         <div class="testimonials-col">
-             <img src="./resources/img/user1.jpg" alt="">
-             <div>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit assumenda cumque illum quis, saepe dolore? Ab quae blanditiis minus?</p>
-                 <h3>Christine Berkley</h3>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="far fa-star"></i>
-             </div>
-         </div>
-         <div class="testimonials-col">
-             <img src="./resources/img/user2.jpg" alt="">
-             <div>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit assumenda cumque illum quis, saepe dolore? Ab quae blanditiis minus?</p>
-                 <h3>David Byer</h3>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star-half-alt"></i>
-             </div>
-         </div>
-         
-    </div>
-</section>
-<!-------------------CALL TO ACTION------------------->
-<section class="cta">
-    <div class="cta-box">
-        <h1>Enroll For Out Various Online Courses <br> Anywhere From The World</h1>
-        <a href="" class="hero-btn">CONTACT US</a>
-    </div>
-</section>
-<section class="footer">
-    <h4>About Us </h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum a nihil <br> rem velit aperiam facere asperiores voluptate odio ad! Alias unde obcaecati porro repellat.</p>
-    <div class="icons">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-linkedin"></i>
-    </div>
-        <p>Made with <i class="fas fa-heart" style="color: red;"></i> by Easy Tutorials</p>
-</section>
 
+        </div>
+    </div>
+
+    <script>
+        //MenuTogle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.onclick = function() {
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        //add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink() {
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover',activeLink));
+    </script>
+   
 </body>
 
 </html>

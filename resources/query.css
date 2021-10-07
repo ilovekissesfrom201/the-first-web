@@ -1,41 +1,57 @@
-@media screen and (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
+@media screen and (max-width: 991px) {
+  .navigation {
+    left: -300px;
   }
-  .nav-links ul li {
-    display: block;
+  .navigation.active {
+    left: 0;
+    width: 300px;
   }
-  .nav-links {
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 300px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 100%);
+    justify-content: center;
+  }
+  .cardHeader h2 {
+    font-size: 18px;
+  }
+  .user {
+    min-width: 40px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle {
+    z-index: 1001;
+  }
+  .main.active .toggle {
+    color: var(--white);
     position: fixed;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    z-index: 2;
-    text-align: left;
-    transition: 1s;
-  }
-  nav .fas {
-    display: block;
-    color: #fff;
-    font-size: 22px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  nav > .fas:hover {
-    background-color: rgba(244, 67, 54, 0.8) !important;
-  }
-  .row {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 12px;
-  }
-  .cta-box h1 {
-    font-size: 24px;
+    right: 0;
+    left: initial;
   }
 }
