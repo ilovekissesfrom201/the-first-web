@@ -1,57 +1,186 @@
-@media screen and (max-width: 991px) {
-  .navigation {
-    left: -300px;
+@media screen and (max-width: 1199px) {
+  .header__banner {
+    margin-top: 8rem;
   }
-  .navigation.active {
-    left: 0;
-    width: 300px;
+  .details__list-item img {
+    flex-basis: 40%;
   }
-  .main {
-    width: 100%;
-    left: 0;
+  .details__list-item {
+    padding-top: 14rem;
   }
-  .main.active {
-    left: 300px;
+  .details__list-content {
+    flex-basis: calc(40% - 3.5rem);
   }
-  .cardBox {
-    grid-template-columns: repeat(2, 1fr);
+  .contacts__socialMedia {
+    flex-wrap: wrap;
   }
-}
-@media screen and (max-width: 768px) {
-  .details {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .recentOrders {
-    overflow-x: auto;
+  .emailAddress label input {
+    width: 70rem;
+    margin-top: 4rem;
   }
 }
-@media screen and (max-width: 768px) {
-  .cardBox {
-    grid-template-columns: repeat(1, 100%);
-    justify-content: center;
+@media screen and (max-width: 1023px) {
+  .header__banner {
+    margin-top: 6rem;
   }
-  .cardHeader h2 {
-    font-size: 18px;
+  .header__banner h1 {
+    font-size: 5rem;
   }
-  .user {
-    min-width: 40px;
+  .game__list-item {
+    flex-basis: calc(50% - 3rem);
   }
-  .navigation {
-    width: 100%;
-    left: -100%;
-    z-index: 1000;
+
+  .details__list-item {
+    padding-top: 8rem;
   }
-  .navigation.navigation.active {
-    width: 100%;
-    left: 0;
+  .details__list-item {
+    flex-wrap: wrap;
   }
-  .toggle {
-    z-index: 1001;
+  .details__list-item img {
+    flex-basis: 100%;
   }
-  .main.active .toggle {
-    color: var(--white);
-    position: fixed;
-    right: 0;
-    left: initial;
+  .details__list-content {
+    flex-basis: 100%;
+  }
+  .partners {
+    padding-top: 8rem;
+  }
+  .partners__logo {
+    flex-wrap: wrap;
+  }
+  .partners__logo img {
+    flex-basis: 12%;
+    object-fit: contain;
+  }
+  .contacts__list-item {
+    flex-basis: calc(50% - 3rem);
+  }
+  .emailAddress label input {
+    width: 60rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__banner {
+    margin-top: 4rem;
+  }
+  .header__banner h1 {
+    font-size: 3rem;
+  }
+  .header__banner p {
+    font-size: 2rem;
+  }
+  nav {
+    display: none;
+  }
+  .games {
+    padding-top: 8rem;
+  }
+  .game__list-item {
+    flex-basis: 100%;
+  }
+  .details__list-content h3 {
+    font-size: 3rem;
+  }
+  .listContent__column h4 {
+    font-size: 1.8rem;
+  }
+  .listContent__column p {
+    font-size: 1.6rem;
+  }
+  .details__list-item {
+    padding-top: 8rem;
+  }
+  .partners__logo img {
+    flex-basis: calc(50% - 3rem);
+    object-fit: contain;
+    margin-bottom: 3rem;
+  }
+  .partners__title:after {
+    margin: 3rem auto;
+  }
+  .contacts {
+    padding-top: 8rem;
+  }
+  .contacts__title {
+    font-size: 3rem;
+  }
+  .emailAddress label input {
+    width: 35rem;
+  }
+  .contacts__socialMedia {
+    padding-top: 8rem;
+  }
+  .moreInformation__list {
+    flex-wrap: wrap;
+  }
+  .moreInformation__events {
+    flex-basis: calc(50% - 3rem);
+    margin-bottom: 3rem;
+  }
+  .moreInformation__more {
+    flex-basis: calc(50% - 3rem);
+    margin-bottom: 3rem;
+  }
+  .moreInformation__help {
+    flex-basis: calc(50% - 3rem);
+  }
+  .moreInformation__list {
+    padding-bottom: 5.5rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .header__banner {
+    margin-top: 3rem;
+  }
+  .header__banner h1 {
+    font-size: 2.4rem;
+  }
+  .header__banner p {
+    font-size: 1.6rem;
+  }
+  .emailAddress label input {
+    width: 28rem;
+  }
+  .header__banner .btn {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+  .moreInformation__list {
+    flex-wrap: wrap;
+  }
+  .contacts__list-item {
+    flex-basis: calc(50% - 1.2rem);
+    margin-bottom: 3rem;
+  }
+  .socialMediaIcon i {
+    margin-left: 3.5rem;
+  }
+  .moreInformation__logo {
+    flex-basis: 100%;
+  }
+  .moreInformation__more {
+    flex-basis: 100%;
+  }
+  .moreInformation__help {
+    flex-basis: 100%;
+  }
+  .moreInformation__list {
+    padding-bottom: 100%;
+  }
+  .moreInformation__list {
+    padding-bottom: 3rem;
+  }
+  .footer {
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-bottom: 7rem;
+  }
+  .footer__left {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .footer__right {
+    flex-basis: 100%;
+    text-align: center;
   }
 }

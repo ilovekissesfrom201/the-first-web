@@ -6,306 +6,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./resources/style.css">
     <link rel="stylesheet" href="./resources/query.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
-                        <span class="title">Brand name</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="title">Customers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                        <span class="title">Message</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-                        <span class="title">Help</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                        <span class="title">Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                        <span class="title">Sign Out</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="main">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-                <!-- search -->
-                <div class="search">
-                    <label for="">
-                        <input type="text" placeholder="search here">
-                        <ion-icon name="search"></ion-icon>
-                    </label>
-                </div>
-                <!-- userImg -->
-                <div class="user">
-                    <img src="./resources/img/user.jpg" alt="">
-                </div>
-            </div>
-            <!-- cards -->
-            <div class="cardBox">
-                <div class="card">
-                   <div>
-                    <div class="numbers">1,504</div>
-                    <div class="cardName">Daily Views</div>
-                   </div>
-                   <div class="iconBx">
-                    <ion-icon name="eye-outline"></ion-icon>
-                   </div>
-                </div>
-                <div class="card">
-                   <div>
-                    <div class="numbers">80</div>
-                    <div class="cardName">Sales</div>
-                   </div>
-                   <div class="iconBx">
-                    <ion-icon name="cart-outline"></ion-icon>
-                   </div>
-                </div>
-                <div class="card">
-                   <div>
-                    <div class="numbers">284</div>
-                    <div class="cardName">Comments</div>
-                   </div>
-                   <div class="iconBx">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                   </div>
-                </div>
-                <div class="card">
-                   <div>
-                    <div class="numbers">$66</div>
-                    <div class="cardName">Earning</div>
-                   </div>
-                   <div class="iconBx">
-                    <ion-icon name="cash-outline"></ion-icon>
-                   </div>
-                </div>
-            </div>
-            <!-- order details list -->
-            <div class="details">
-                <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Recent recentOrders</h2>
-                        <a href="" class="btn">View All</a>
+    <div id="wrapper">
+        <header>
+            <section class="header__nav">
+                <div class="container">
+                    <div class="header__nav-list">
+                        <div class="logo">
+                            <img src="./resources/img/logo.png" alt="logo">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Events <span><i class="fas fa-chevron-down"></i></span> </a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Log in</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Name</td>
-                                <td>Price</td>
-                                <td>Payment</td>
-                                <td>Status</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status pending">Pending</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status pending">Pending</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status delivered">delivered</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- New customers -->
-                <div class="recentCustomers">
-                    <div class="cardHeader">
-                        <h2>Recent Customers</h2>
+                    <div class="header__banner">
+                        <h1>The Kids Playground</h1>
+                        <p>The Playground, designed by nonprofit organization to be <br>accessible for all children </p>
+                        <a href="#" class="btn">Explore</a>
+                        <a href="#" class="btn">Buy Tickets</a>
                     </div>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img1.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img2.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img3.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img7.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img8.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img9.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img5.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td width="60px"><div class="imgBx"><img src="./resources/img/img6.jpg" alt=""></div></td>
-                            <td><h4>David</h4><span>Italy</span></td>
-                        </tr>
-                    </table>
                 </div>
-            </div>
+            </section>
+        </header>
+        <main>
+            <div class="container">
+                <section class="games">
+                    <div class="games__list">
+                        <div class="game__list-item">
+                            <img src="./resources/img/img1.png" alt="">
+                            <div class="game__title">
+                                <h2>Safe Rides Hoang Minh Loi Hoang Minh Loi</h2>
+                                <p>CC Certified <span><i class="fal fa-long-arrow-right"></i></span></p>
+                            </div>
+                        </div>
+                        <div class="game__list-item">
+                            <img src="./resources/img/img2.png" alt="">
+                            <div class="game__title">
+                                <h2>Delicious Foods</h2>
+                                <p>Gluten Free <span><i class="fal fa-long-arrow-right"></i></span></p>
+                            </div>
+                        </div>
+                        <div class="game__list-item">
+                            <img src="./resources/img/img3.png" alt="">
+                            <div class="game__title">
+                                <h2>Entertainment</h2>
+                                <p>Suitable For Kids <span><i class="fal fa-long-arrow-right"></i></span></p>
+                            </div>
+                        </div>
+                        <div class="game__list-item">
+                            <img src="./resources/img/img4.png" alt="">
+                            <div class="game__title">
+                                <h2>Ice-Scream</h2>
+                                <p>No Synthetic <span><i class="fal fa-long-arrow-right"></i></span></p>
+                            </div>
+                        </div>
 
-        </div>
+                    </div>
+                </section>
+                <section class="details">
+                    <div class="details__list">
+                        <div class="details__list-item">
+                            <img src="./resources/img/img5.png" alt="">
+                            <div class="details__list-content">
+                                <h3>The outdoor <br> environment is <br> age-appropriate to play</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem error laborum nam unde
+                                    beatae delectus sequi voluptatibus vel!</p>
+                                <div class="listContent">
+                                    <p>The playground has been designed to feature a first <br> responders theme</p>
+                                    <p>Fully-inclusive playground offers rich experiences</p>
+                                    <p>The project is set to open Spring 2019</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="#" class="btn details__btn">Visit Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details__list">
+                        <div class="details__list-item details__list-item-2">
+                            <img src="./resources/img/img6.png" alt="">
+                            <div class="details__list-content details__list-content-2">
+                                <h3>The best Aquapark <br> for kid</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem error laborum nam unde
+                                    beatae delectus sequi voluptatibus vel!</p>
+                                <div class="listContent listContent-2">
+                                    <p>The Fire Truck with Free Food</p>
+                                    <p>The Police Car with Costume</p>
+                                    <p>The Roller Coaster with Safety</p>
+                                    <p>The Best Entertaining Events</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details__list">
+                        <div class="details__list-item details__list-item-3">
+                            <img src="./resources/img/img7.png" alt="">
+                            <div class="details__list-content details__list-content-3">
+                                <h3>Why we are <br> the best</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem error laborum nam unde
+                                    beatae delectus sequi voluptatibus vel!</p>
+                                <div class="listContent listContent-3">
+                                    <div class="listContent__column">
+                                        <div class="icon">
+                                            <i class="fas fa-coins"></i>
+                                        </div>
+                                        <h4>Non Profitable Organization</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    </div>
+                                    <div class="listContent__column">
+                                        <div class="icon">
+                                            <i class="fas fa-coins"></i>
+                                        </div>
+                                        <h4>Non Profitable Organization</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    </div>
+                                    <div class="listContent__column">
+                                        <div class="icon">
+                                            <i class="fas fa-coins"></i>
+                                        </div>
+                                        <h4>Non Profitable Organization</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    </div>
+                                    <div class="listContent__column">
+                                        <div class="icon">
+                                            <i class="fas fa-coins"></i>
+                                        </div>
+                                        <h4>Non Profitable Organization</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="partners">
+                    <h3 class="partners__title">Our business partners</h3>
+                    <div class="partners__logo">
+                        <img src="./resources/img/logo-amazon.png" alt="">
+                        <img src="./resources/img/logo-netflix.png" alt="">
+                        <img src="./resources/img/logo-newyork.png" alt="">
+                        <img src="./resources/img/logo-stripe.png" alt="">
+                    </div>
+                </section>
+                <section class="contacts">
+                    <h3 class="contacts__title">For kids who enjoy themselves</h3>
+                    <h4 class="contacts__h4">Contact with us <span>@Playground</span> </h4>
+                    <div class="contacts__more">
+                        <div class="contacts__list">
+                            <div class="contacts__list-item">
+                                <img src="./resources/img/img-8.png" alt="">
+                            </div>
+                            <div class="contacts__list-item">
+                                <img src="./resources/img/img9.png" alt="">
+                            </div>
+                            <div class="contacts__list-item">
+                                <img src="./resources/img/img10.png" alt="">
+                            </div>
+                            <div class="contacts__list-item">
+                                <img src="./resources/img/img11.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__socialMedia">
+                        <h3>Subscribe to our newsletter to get future offers</h3>
+                        <div class="socialMedia">
+                            <form action="#" class="emailAddress">
+                                <label for="#">
+                                    <input type="email" placeholder="Enter your email">
+                                    <a href="#">Subscribe</a>
+                                </label>
+                            </form>
+                            <div class="socialMediaIcon">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="moreInformation">
+                    <div class="moreInformation__list">
+                        <div class="moreInformation__logo">
+                            <img class="logo" src="./resources/img/logo.png" alt="">
+                        </div>
+                        <div class="moreInformation__events">
+                            <p>Events for kids</p>
+                            <p>Events for Parents</p>
+                            <p>Events for Guests</p>
+                            <p>Game & Gifts</p>
+                        </div>
+                        <div class="moreInformation__more">
+                            <p>Events</p>
+                            <p>Who we are</p>
+                            <p>Services</p>
+                            <p>Features</p>
+                            <p>Reviews</p>
+                        </div>
+                        <div class="moreInformation__help">
+                            <p>Careers</p>
+                            <p>Press</p>
+                            <p>Help</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__left">
+                        <span>Privacy policy</span>
+                        <span>Terms of Services</span>
+                    </div>
+                    <div class="footer__right">
+                        <p>&#169 2020 Playground. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <script>
-        //MenuTogle
-        let toggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
-        let main = document.querySelector('.main');
-        toggle.onclick = function() {
-            navigation.classList.toggle('active');
-            main.classList.toggle('active');
-        }
-
-        //add hovered class in selected list item
-        let list = document.querySelectorAll('.navigation li');
-        function activeLink() {
-            list.forEach((item) =>
-            item.classList.remove('hovered'));
-            this.classList.add('hovered');
-        }
-        list.forEach((item) =>
-        item.addEventListener('mouseover',activeLink));
-    </script>
-   
 </body>
 
 </html>
